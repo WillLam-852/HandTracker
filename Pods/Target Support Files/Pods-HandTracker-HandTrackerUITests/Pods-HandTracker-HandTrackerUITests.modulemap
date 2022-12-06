@@ -1,0 +1,6 @@
+framework module Pods_HandTracker_HandTrackerUITests {
+  umbrella header "Pods-HandTracker-HandTrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

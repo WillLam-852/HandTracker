@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324664FBC6FE5E24A3C12700 /* Pods_HandTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380E9F6D0D22796C4428278F /* Pods_HandTrackerTests.framework */; };
 		431DB26428AC9B54005EEBF5 /* HelloWorldApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */; platformFilter = ios; };
 		431DB26528AC9B54005EEBF5 /* HelloWorldApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43728A3928AB581D00B65D85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A3828AB581D00B65D85 /* AppDelegate.swift */; };
@@ -24,10 +25,12 @@
 		4378FD0D28B37EBF00A96A43 /* AbstractCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378FD0C28B37EBF00A96A43 /* AbstractCheck.swift */; };
 		4378FD0F28B385E000A96A43 /* WristRotationCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378FD0E28B385E000A96A43 /* WristRotationCheck.swift */; };
 		439B050228B879B500115ED9 /* FingerExtensionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439B050128B879B500115ED9 /* FingerExtensionCheck.swift */; };
+		43A6469FB90FF99239A5AFB0 /* Pods_HandTracker_HandTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACC866E2B45E6636B37E4F9 /* Pods_HandTracker_HandTrackerUITests.framework */; };
 		43A7F0A628BC55A400C15918 /* FingerOppositionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A528BC55A400C15918 /* FingerOppositionCheck.swift */; };
 		43A7F0A828BC6D9700C15918 /* FingerExerciseCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A728BC6D9700C15918 /* FingerExerciseCheck.swift */; };
 		43A7F0AA28BCB6D000C15918 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A928BCB6D000C15918 /* TestCheck.swift */; };
 		43FF308428B4C50300A7DE2E /* ThumbAbductionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF308328B4C50300A7DE2E /* ThumbAbductionCheck.swift */; };
+		8BB850EF5DB9D36D1BCA490B /* Pods_HandTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52F9D2D5B3B19830B51516B /* Pods_HandTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08F9F5B364E29FF33D14D428 /* Pods-HandTracker-HandTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandTracker-HandTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-HandTracker-HandTrackerUITests/Pods-HandTracker-HandTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2BCCDF78127778E322EEC011 /* Pods-HandTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-HandTrackerTests/Pods-HandTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		380E9F6D0D22796C4428278F /* Pods_HandTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C3562B82D5E128ED5200B5 /* Pods-HandTracker-HandTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandTracker-HandTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-HandTracker-HandTrackerUITests/Pods-HandTracker-HandTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HelloWorldApp.framework; sourceTree = "<group>"; };
 		43728A3528AB581D00B65D85 /* HandTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43728A3828AB581D00B65D85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +94,11 @@
 		43A7F0A728BC6D9700C15918 /* FingerExerciseCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerExerciseCheck.swift; sourceTree = "<group>"; };
 		43A7F0A928BCB6D000C15918 /* TestCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCheck.swift; sourceTree = "<group>"; };
 		43FF308328B4C50300A7DE2E /* ThumbAbductionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbAbductionCheck.swift; sourceTree = "<group>"; };
+		45BF23D557ACC1243763F460 /* Pods-HandTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-HandTrackerTests/Pods-HandTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B52F9D2D5B3B19830B51516B /* Pods_HandTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A11D806FB5BBD21F493263 /* Pods-HandTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandTracker.release.xcconfig"; path = "Target Support Files/Pods-HandTracker/Pods-HandTracker.release.xcconfig"; sourceTree = "<group>"; };
+		EACC866E2B45E6636B37E4F9 /* Pods_HandTracker_HandTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandTracker_HandTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6354F7D3A463C3FF89C4A0C /* Pods-HandTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandTracker.debug.xcconfig"; path = "Target Support Files/Pods-HandTracker/Pods-HandTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				431DB26428AC9B54005EEBF5 /* HelloWorldApp.framework in Frameworks */,
+				8BB850EF5DB9D36D1BCA490B /* Pods_HandTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324664FBC6FE5E24A3C12700 /* Pods_HandTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A6469FB90FF99239A5AFB0 /* Pods_HandTracker_HandTrackerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */,
+				B52F9D2D5B3B19830B51516B /* Pods_HandTracker.framework */,
+				EACC866E2B45E6636B37E4F9 /* Pods_HandTracker_HandTrackerUITests.framework */,
+				380E9F6D0D22796C4428278F /* Pods_HandTrackerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +150,7 @@
 				43728A6F28AB593900B65D85 /* HandTracker-Bridging-Header.h */,
 				43728A3628AB581D00B65D85 /* Products */,
 				431DB25F28AC9310005EEBF5 /* Frameworks */,
+				4396297B866D2FC243BCF5FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +213,20 @@
 			path = Graph;
 			sourceTree = "<group>";
 		};
+		4396297B866D2FC243BCF5FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6354F7D3A463C3FF89C4A0C /* Pods-HandTracker.debug.xcconfig */,
+				E3A11D806FB5BBD21F493263 /* Pods-HandTracker.release.xcconfig */,
+				41C3562B82D5E128ED5200B5 /* Pods-HandTracker-HandTrackerUITests.debug.xcconfig */,
+				08F9F5B364E29FF33D14D428 /* Pods-HandTracker-HandTrackerUITests.release.xcconfig */,
+				2BCCDF78127778E322EEC011 /* Pods-HandTrackerTests.debug.xcconfig */,
+				45BF23D557ACC1243763F460 /* Pods-HandTrackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43728A5F28AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTracker" */;
 			buildPhases = (
+				51B3BCA5EE834448877910C8 /* [CP] Check Pods Manifest.lock */,
 				43728A3128AB581D00B65D85 /* Sources */,
 				43728A3228AB581D00B65D85 /* Frameworks */,
 				43728A3328AB581D00B65D85 /* Resources */,
@@ -219,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43728A6228AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTrackerTests" */;
 			buildPhases = (
+				67ACFB74BFBC724BD8BECE2A /* [CP] Check Pods Manifest.lock */,
 				43728A4728AB582000B65D85 /* Sources */,
 				43728A4828AB582000B65D85 /* Frameworks */,
 				43728A4928AB582000B65D85 /* Resources */,
@@ -237,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43728A6528AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTrackerUITests" */;
 			buildPhases = (
+				BEE6D47863C35AA958B23A92 /* [CP] Check Pods Manifest.lock */,
 				43728A5128AB582000B65D85 /* Sources */,
 				43728A5228AB582000B65D85 /* Frameworks */,
 				43728A5328AB582000B65D85 /* Resources */,
@@ -321,6 +357,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51B3BCA5EE834448877910C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67ACFB74BFBC724BD8BECE2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEE6D47863C35AA958B23A92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandTracker-HandTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43728A3128AB581D00B65D85 /* Sources */ = {
@@ -513,6 +618,7 @@
 		};
 		43728A6028AB582000B65D85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6354F7D3A463C3FF89C4A0C /* Pods-HandTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -552,6 +658,7 @@
 		};
 		43728A6128AB582000B65D85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A11D806FB5BBD21F493263 /* Pods-HandTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -590,6 +697,7 @@
 		};
 		43728A6328AB582000B65D85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BCCDF78127778E322EEC011 /* Pods-HandTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -610,6 +718,7 @@
 		};
 		43728A6428AB582000B65D85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45BF23D557ACC1243763F460 /* Pods-HandTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,6 +739,7 @@
 		};
 		43728A6628AB582000B65D85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C3562B82D5E128ED5200B5 /* Pods-HandTracker-HandTrackerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,6 +758,7 @@
 		};
 		43728A6728AB582000B65D85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F9F5B364E29FF33D14D428 /* Pods-HandTracker-HandTrackerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
