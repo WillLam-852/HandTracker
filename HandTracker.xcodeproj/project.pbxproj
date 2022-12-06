@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		431DB26428AC9B54005EEBF5 /* HelloWorldApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */; platformFilter = ios; };
+		431DB26528AC9B54005EEBF5 /* HelloWorldApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43728A3928AB581D00B65D85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A3828AB581D00B65D85 /* AppDelegate.swift */; };
+		43728A3D28AB581D00B65D85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A3C28AB581D00B65D85 /* ViewController.swift */; };
+		43728A4028AB581D00B65D85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43728A3E28AB581D00B65D85 /* Main.storyboard */; };
+		43728A4228AB582000B65D85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43728A4128AB582000B65D85 /* Assets.xcassets */; };
+		43728A4528AB582000B65D85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43728A4328AB582000B65D85 /* LaunchScreen.storyboard */; };
+		43728A5028AB582000B65D85 /* HandTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A4F28AB582000B65D85 /* HandTrackerTests.swift */; };
+		43728A5A28AB582000B65D85 /* HandTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A5928AB582000B65D85 /* HandTrackerUITests.swift */; };
+		43728A5C28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A5B28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift */; };
+		43728A7328AB5C5700B65D85 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A7228AB5C5600B65D85 /* Camera.swift */; };
+		43728A7528AB5D6000B65D85 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A7428AB5D6000B65D85 /* Extension.swift */; };
+		43728A7E28AB942200B65D85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A7D28AB942200B65D85 /* SceneDelegate.swift */; };
+		4378FD0728B32E4600A96A43 /* WristExtensionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378FD0628B32E4600A96A43 /* WristExtensionCheck.swift */; };
+		4378FD0D28B37EBF00A96A43 /* AbstractCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378FD0C28B37EBF00A96A43 /* AbstractCheck.swift */; };
+		4378FD0F28B385E000A96A43 /* WristRotationCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378FD0E28B385E000A96A43 /* WristRotationCheck.swift */; };
+		439B050228B879B500115ED9 /* FingerExtensionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439B050128B879B500115ED9 /* FingerExtensionCheck.swift */; };
+		43A7F0A628BC55A400C15918 /* FingerOppositionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A528BC55A400C15918 /* FingerOppositionCheck.swift */; };
+		43A7F0A828BC6D9700C15918 /* FingerExerciseCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A728BC6D9700C15918 /* FingerExerciseCheck.swift */; };
+		43A7F0AA28BCB6D000C15918 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A928BCB6D000C15918 /* TestCheck.swift */; };
+		43FF308428B4C50300A7DE2E /* ThumbAbductionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF308328B4C50300A7DE2E /* ThumbAbductionCheck.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43728A4C28AB582000B65D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43728A2D28AB581D00B65D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43728A3428AB581D00B65D85;
+			remoteInfo = HandTracker;
+		};
+		43728A5628AB582000B65D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43728A2D28AB581D00B65D85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43728A3428AB581D00B65D85;
+			remoteInfo = HandTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43728A7828AB789500B65D85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				431DB26528AC9B54005EEBF5 /* HelloWorldApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HelloWorldApp.framework; sourceTree = "<group>"; };
+		43728A3528AB581D00B65D85 /* HandTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43728A3828AB581D00B65D85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43728A3C28AB581D00B65D85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43728A3F28AB581D00B65D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43728A4128AB582000B65D85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43728A4428AB582000B65D85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43728A4628AB582000B65D85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43728A4B28AB582000B65D85 /* HandTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43728A4F28AB582000B65D85 /* HandTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackerTests.swift; sourceTree = "<group>"; };
+		43728A5528AB582000B65D85 /* HandTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43728A5928AB582000B65D85 /* HandTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackerUITests.swift; sourceTree = "<group>"; };
+		43728A5B28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43728A6F28AB593900B65D85 /* HandTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HandTracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		43728A7228AB5C5600B65D85 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		43728A7428AB5D6000B65D85 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		43728A7D28AB942200B65D85 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4378FD0628B32E4600A96A43 /* WristExtensionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristExtensionCheck.swift; sourceTree = "<group>"; };
+		4378FD0C28B37EBF00A96A43 /* AbstractCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractCheck.swift; sourceTree = "<group>"; };
+		4378FD0E28B385E000A96A43 /* WristRotationCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristRotationCheck.swift; sourceTree = "<group>"; };
+		439B050128B879B500115ED9 /* FingerExtensionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerExtensionCheck.swift; sourceTree = "<group>"; };
+		43A7F0A528BC55A400C15918 /* FingerOppositionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerOppositionCheck.swift; sourceTree = "<group>"; };
+		43A7F0A728BC6D9700C15918 /* FingerExerciseCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerExerciseCheck.swift; sourceTree = "<group>"; };
+		43A7F0A928BCB6D000C15918 /* TestCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCheck.swift; sourceTree = "<group>"; };
+		43FF308328B4C50300A7DE2E /* ThumbAbductionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbAbductionCheck.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43728A3228AB581D00B65D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				431DB26428AC9B54005EEBF5 /* HelloWorldApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43728A4828AB582000B65D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43728A5228AB582000B65D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		431DB25F28AC9310005EEBF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				431DB26328AC9B44005EEBF5 /* HelloWorldApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43728A2C28AB581D00B65D85 = {
+			isa = PBXGroup;
+			children = (
+				43728A3728AB581D00B65D85 /* HandTracker */,
+				43728A4E28AB582000B65D85 /* HandTrackerTests */,
+				43728A5828AB582000B65D85 /* HandTrackerUITests */,
+				43728A6F28AB593900B65D85 /* HandTracker-Bridging-Header.h */,
+				43728A3628AB581D00B65D85 /* Products */,
+				431DB25F28AC9310005EEBF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43728A3628AB581D00B65D85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43728A3528AB581D00B65D85 /* HandTracker.app */,
+				43728A4B28AB582000B65D85 /* HandTrackerTests.xctest */,
+				43728A5528AB582000B65D85 /* HandTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43728A3728AB581D00B65D85 /* HandTracker */ = {
+			isa = PBXGroup;
+			children = (
+				4378FD0828B32E5E00A96A43 /* Graph */,
+				43728A3828AB581D00B65D85 /* AppDelegate.swift */,
+				43728A7D28AB942200B65D85 /* SceneDelegate.swift */,
+				43728A7428AB5D6000B65D85 /* Extension.swift */,
+				43728A3C28AB581D00B65D85 /* ViewController.swift */,
+				43728A7228AB5C5600B65D85 /* Camera.swift */,
+				43728A4128AB582000B65D85 /* Assets.xcassets */,
+				43728A3E28AB581D00B65D85 /* Main.storyboard */,
+				43728A4328AB582000B65D85 /* LaunchScreen.storyboard */,
+				43728A4628AB582000B65D85 /* Info.plist */,
+			);
+			path = HandTracker;
+			sourceTree = "<group>";
+		};
+		43728A4E28AB582000B65D85 /* HandTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				43728A4F28AB582000B65D85 /* HandTrackerTests.swift */,
+			);
+			path = HandTrackerTests;
+			sourceTree = "<group>";
+		};
+		43728A5828AB582000B65D85 /* HandTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43728A5928AB582000B65D85 /* HandTrackerUITests.swift */,
+				43728A5B28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift */,
+			);
+			path = HandTrackerUITests;
+			sourceTree = "<group>";
+		};
+		4378FD0828B32E5E00A96A43 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				4378FD0C28B37EBF00A96A43 /* AbstractCheck.swift */,
+				4378FD0628B32E4600A96A43 /* WristExtensionCheck.swift */,
+				4378FD0E28B385E000A96A43 /* WristRotationCheck.swift */,
+				43FF308328B4C50300A7DE2E /* ThumbAbductionCheck.swift */,
+				439B050128B879B500115ED9 /* FingerExtensionCheck.swift */,
+				43A7F0A528BC55A400C15918 /* FingerOppositionCheck.swift */,
+				43A7F0A728BC6D9700C15918 /* FingerExerciseCheck.swift */,
+				43A7F0A928BCB6D000C15918 /* TestCheck.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43728A3428AB581D00B65D85 /* HandTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43728A5F28AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTracker" */;
+			buildPhases = (
+				43728A3128AB581D00B65D85 /* Sources */,
+				43728A3228AB581D00B65D85 /* Frameworks */,
+				43728A3328AB581D00B65D85 /* Resources */,
+				43728A7828AB789500B65D85 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandTracker;
+			productName = HandTracker;
+			productReference = 43728A3528AB581D00B65D85 /* HandTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43728A4A28AB582000B65D85 /* HandTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43728A6228AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTrackerTests" */;
+			buildPhases = (
+				43728A4728AB582000B65D85 /* Sources */,
+				43728A4828AB582000B65D85 /* Frameworks */,
+				43728A4928AB582000B65D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43728A4D28AB582000B65D85 /* PBXTargetDependency */,
+			);
+			name = HandTrackerTests;
+			productName = HandTrackerTests;
+			productReference = 43728A4B28AB582000B65D85 /* HandTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43728A5428AB582000B65D85 /* HandTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43728A6528AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTrackerUITests" */;
+			buildPhases = (
+				43728A5128AB582000B65D85 /* Sources */,
+				43728A5228AB582000B65D85 /* Frameworks */,
+				43728A5328AB582000B65D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43728A5728AB582000B65D85 /* PBXTargetDependency */,
+			);
+			name = HandTrackerUITests;
+			productName = HandTrackerUITests;
+			productReference = 43728A5528AB582000B65D85 /* HandTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43728A2D28AB581D00B65D85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					43728A3428AB581D00B65D85 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					43728A4A28AB582000B65D85 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 43728A3428AB581D00B65D85;
+					};
+					43728A5428AB582000B65D85 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 43728A3428AB581D00B65D85;
+					};
+				};
+			};
+			buildConfigurationList = 43728A3028AB581D00B65D85 /* Build configuration list for PBXProject "HandTracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43728A2C28AB581D00B65D85;
+			productRefGroup = 43728A3628AB581D00B65D85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43728A3428AB581D00B65D85 /* HandTracker */,
+				43728A4A28AB582000B65D85 /* HandTrackerTests */,
+				43728A5428AB582000B65D85 /* HandTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43728A3328AB581D00B65D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43728A4528AB582000B65D85 /* LaunchScreen.storyboard in Resources */,
+				43728A4228AB582000B65D85 /* Assets.xcassets in Resources */,
+				43728A4028AB581D00B65D85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43728A4928AB582000B65D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43728A5328AB582000B65D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43728A3128AB581D00B65D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4378FD0D28B37EBF00A96A43 /* AbstractCheck.swift in Sources */,
+				43A7F0A828BC6D9700C15918 /* FingerExerciseCheck.swift in Sources */,
+				4378FD0728B32E4600A96A43 /* WristExtensionCheck.swift in Sources */,
+				43728A7E28AB942200B65D85 /* SceneDelegate.swift in Sources */,
+				43728A7528AB5D6000B65D85 /* Extension.swift in Sources */,
+				4378FD0F28B385E000A96A43 /* WristRotationCheck.swift in Sources */,
+				43FF308428B4C50300A7DE2E /* ThumbAbductionCheck.swift in Sources */,
+				43728A7328AB5C5700B65D85 /* Camera.swift in Sources */,
+				43728A3D28AB581D00B65D85 /* ViewController.swift in Sources */,
+				43A7F0AA28BCB6D000C15918 /* TestCheck.swift in Sources */,
+				43728A3928AB581D00B65D85 /* AppDelegate.swift in Sources */,
+				43A7F0A628BC55A400C15918 /* FingerOppositionCheck.swift in Sources */,
+				439B050228B879B500115ED9 /* FingerExtensionCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43728A4728AB582000B65D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43728A5028AB582000B65D85 /* HandTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43728A5128AB582000B65D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43728A5C28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift in Sources */,
+				43728A5A28AB582000B65D85 /* HandTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43728A4D28AB582000B65D85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43728A3428AB581D00B65D85 /* HandTracker */;
+			targetProxy = 43728A4C28AB582000B65D85 /* PBXContainerItemProxy */;
+		};
+		43728A5728AB582000B65D85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43728A3428AB581D00B65D85 /* HandTracker */;
+			targetProxy = 43728A5628AB582000B65D85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43728A3E28AB581D00B65D85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43728A3F28AB581D00B65D85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43728A4328AB582000B65D85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43728A4428AB582000B65D85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43728A5D28AB582000B65D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43728A5E28AB582000B65D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43728A6028AB582000B65D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56U8UCMG4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HandTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HTracker;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use to detect hands";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HandTracker.iosuser111;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HandTracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43728A6128AB582000B65D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56U8UCMG4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HandTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HTracker;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use to detect hands";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HandTracker.iosuser111;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HandTracker-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43728A6328AB582000B65D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75J7TVGUG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itd.hkuit.HandTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandTracker.app/HandTracker";
+			};
+			name = Debug;
+		};
+		43728A6428AB582000B65D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75J7TVGUG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itd.hkuit.HandTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandTracker.app/HandTracker";
+			};
+			name = Release;
+		};
+		43728A6628AB582000B65D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75J7TVGUG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itd.hkuit.HandTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandTracker;
+			};
+			name = Debug;
+		};
+		43728A6728AB582000B65D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75J7TVGUG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itd.hkuit.HandTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43728A3028AB581D00B65D85 /* Build configuration list for PBXProject "HandTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43728A5D28AB582000B65D85 /* Debug */,
+				43728A5E28AB582000B65D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43728A5F28AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43728A6028AB582000B65D85 /* Debug */,
+				43728A6128AB582000B65D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43728A6228AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43728A6328AB582000B65D85 /* Debug */,
+				43728A6428AB582000B65D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43728A6528AB582000B65D85 /* Build configuration list for PBXNativeTarget "HandTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43728A6628AB582000B65D85 /* Debug */,
+				43728A6728AB582000B65D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43728A2D28AB581D00B65D85 /* Project object */;
+}
