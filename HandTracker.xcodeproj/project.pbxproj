@@ -18,7 +18,7 @@
 		43728A5028AB582000B65D85 /* HandTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A4F28AB582000B65D85 /* HandTrackerTests.swift */; };
 		43728A5A28AB582000B65D85 /* HandTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A5928AB582000B65D85 /* HandTrackerUITests.swift */; };
 		43728A5C28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A5B28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift */; };
-		43728A7328AB5C5700B65D85 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A7228AB5C5600B65D85 /* Camera.swift */; };
+		43728A7328AB5C5700B65D85 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A7228AB5C5600B65D85 /* CameraFeedManager.swift */; };
 		43728A7528AB5D6000B65D85 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A7428AB5D6000B65D85 /* Extension.swift */; };
 		43728A7E28AB942200B65D85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43728A7D28AB942200B65D85 /* SceneDelegate.swift */; };
 		4378FD0728B32E4600A96A43 /* WristExtensionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378FD0628B32E4600A96A43 /* WristExtensionCheck.swift */; };
@@ -29,6 +29,7 @@
 		43A7F0A628BC55A400C15918 /* FingerOppositionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A528BC55A400C15918 /* FingerOppositionCheck.swift */; };
 		43A7F0A828BC6D9700C15918 /* FingerExerciseCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A728BC6D9700C15918 /* FingerExerciseCheck.swift */; };
 		43A7F0AA28BCB6D000C15918 /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A7F0A928BCB6D000C15918 /* TestCheck.swift */; };
+		43D7E668293F4BE200482EE9 /* CameraFeedManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D7E667293F4BE200482EE9 /* CameraFeedManagerError.swift */; };
 		43FF308428B4C50300A7DE2E /* ThumbAbductionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FF308328B4C50300A7DE2E /* ThumbAbductionCheck.swift */; };
 		8BB850EF5DB9D36D1BCA490B /* Pods_HandTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52F9D2D5B3B19830B51516B /* Pods_HandTracker.framework */; };
 /* End PBXBuildFile section */
@@ -83,7 +84,7 @@
 		43728A5928AB582000B65D85 /* HandTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackerUITests.swift; sourceTree = "<group>"; };
 		43728A5B28AB582000B65D85 /* HandTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43728A6F28AB593900B65D85 /* HandTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HandTracker-Bridging-Header.h"; sourceTree = "<group>"; };
-		43728A7228AB5C5600B65D85 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		43728A7228AB5C5600B65D85 /* CameraFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
 		43728A7428AB5D6000B65D85 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		43728A7D28AB942200B65D85 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4378FD0628B32E4600A96A43 /* WristExtensionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristExtensionCheck.swift; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		43A7F0A528BC55A400C15918 /* FingerOppositionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerOppositionCheck.swift; sourceTree = "<group>"; };
 		43A7F0A728BC6D9700C15918 /* FingerExerciseCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerExerciseCheck.swift; sourceTree = "<group>"; };
 		43A7F0A928BCB6D000C15918 /* TestCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCheck.swift; sourceTree = "<group>"; };
+		43D7E667293F4BE200482EE9 /* CameraFeedManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManagerError.swift; sourceTree = "<group>"; };
 		43FF308328B4C50300A7DE2E /* ThumbAbductionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbAbductionCheck.swift; sourceTree = "<group>"; };
 		45BF23D557ACC1243763F460 /* Pods-HandTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-HandTrackerTests/Pods-HandTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		B52F9D2D5B3B19830B51516B /* Pods_HandTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,12 +169,13 @@
 		43728A3728AB581D00B65D85 /* HandTracker */ = {
 			isa = PBXGroup;
 			children = (
+				43D7E666293F4BC900482EE9 /* Errors */,
 				4378FD0828B32E5E00A96A43 /* Graph */,
 				43728A3828AB581D00B65D85 /* AppDelegate.swift */,
 				43728A7D28AB942200B65D85 /* SceneDelegate.swift */,
 				43728A7428AB5D6000B65D85 /* Extension.swift */,
 				43728A3C28AB581D00B65D85 /* ViewController.swift */,
-				43728A7228AB5C5600B65D85 /* Camera.swift */,
+				43728A7228AB5C5600B65D85 /* CameraFeedManager.swift */,
 				43728A4128AB582000B65D85 /* Assets.xcassets */,
 				43728A3E28AB581D00B65D85 /* Main.storyboard */,
 				43728A4328AB582000B65D85 /* LaunchScreen.storyboard */,
@@ -223,8 +226,15 @@
 				2BCCDF78127778E322EEC011 /* Pods-HandTrackerTests.debug.xcconfig */,
 				45BF23D557ACC1243763F460 /* Pods-HandTrackerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		43D7E666293F4BC900482EE9 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				43D7E667293F4BE200482EE9 /* CameraFeedManagerError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,9 +447,10 @@
 				4378FD0728B32E4600A96A43 /* WristExtensionCheck.swift in Sources */,
 				43728A7E28AB942200B65D85 /* SceneDelegate.swift in Sources */,
 				43728A7528AB5D6000B65D85 /* Extension.swift in Sources */,
+				43D7E668293F4BE200482EE9 /* CameraFeedManagerError.swift in Sources */,
 				4378FD0F28B385E000A96A43 /* WristRotationCheck.swift in Sources */,
 				43FF308428B4C50300A7DE2E /* ThumbAbductionCheck.swift in Sources */,
-				43728A7328AB5C5700B65D85 /* Camera.swift in Sources */,
+				43728A7328AB5C5700B65D85 /* CameraFeedManager.swift in Sources */,
 				43728A3D28AB581D00B65D85 /* ViewController.swift in Sources */,
 				43A7F0AA28BCB6D000C15918 /* TestCheck.swift in Sources */,
 				43728A3928AB581D00B65D85 /* AppDelegate.swift in Sources */,
@@ -626,7 +637,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 56U8UCMG4R;
+				DEVELOPMENT_TEAM = QJVHJWV43Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -666,7 +677,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 56U8UCMG4R;
+				DEVELOPMENT_TEAM = QJVHJWV43Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

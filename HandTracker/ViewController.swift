@@ -11,7 +11,7 @@ import ARKit
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, TrackerDelegate {
     
     let action = FingerExerciseCheck()
-    let camera = Camera()
+    let cameraFeedManager = CameraFeedManager()
 //    let displayLayer: AVSampleBufferDisplayLayer = .init()
     let tracker: HandTracker = HandTracker()!
     var d = Date()
@@ -24,13 +24,19 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
 //        view.layer.addSublayer(displayLayer)
-        camera.setSampleBufferDelegate(self)
-        camera.start()
+        
+        // Set the sample buffer delegate and the queue for invoking callbacks
+        // When a new video sample buffer is captured, it is sent to the sample buffer delegate using captureOutput(_:didOutput:from:)
+        cameraFeedManager.setSampleBufferDelegate(self)
+        
+        //
+        cameraFeedManager.startRunning()
         tracker.startGraph()
         tracker.delegate = self
         
         action.checkUpdateDelegate = self
     }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
